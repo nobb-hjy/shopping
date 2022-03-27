@@ -1,0 +1,48 @@
+/* pages/search/index.wxss */
+page{
+  background-color: #ccc;
+}
+.top{
+  width: 90%;
+  margin: 20rpx auto;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.search-input{
+  background-color: white;
+  flex: 1;
+  border-radius: 8rpx;
+}
+.search-input input{
+  height: 70rpx;
+  padding-left: 10rpx;
+}
+.top-status{
+  background-color: white;
+  padding: 0 30rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  margin-left: 15rpx;
+}
+.item{
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  font-size: 24rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-top: 10rpx;
+  padding: 0 10rpx;
+  /* display: -webkit-box; */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.kong{
+  color:var(--themeColor);
+  line-height: 200rpx;
+  text-align: center;
+}

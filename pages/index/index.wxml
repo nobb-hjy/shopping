@@ -1,0 +1,38 @@
+<view>
+<!-- 搜索框 -->
+  <SearchInput></SearchInput>
+<!-- 轮播图 -->
+  <view class="swiper-box">
+      <swiper class="swiper" 	indicator-dots 	autoplay>
+          <swiper-item class="swiper-item" wx:for="{{swiperData}}" wx:key="goods_id">
+            <navigator class="nav" url="/pages/good_detail/index?goods_id={{item.goods_id}}">
+              <image src="{{item.image_src}}" mode="widthFix"></image>
+            </navigator>
+          </swiper-item>
+      </swiper>
+  </view>
+<!-- 导航栏 -->
+<view class="index-nav">
+  <navigator class="nav-item" wx:for="{{navList}}" wx:key="name" open-type="switchTab" url="/pages/category/index">
+  <image src="{{item.image_src}}" mode="widthFix"></image>
+  </navigator>
+</view>
+<!-- 楼层 -->
+<view class="index-floor">
+  <view class="floor-item" wx:for="{{floorData}}" wx:for-item="item1" wx:key="name">
+    <!-- 标题 -->
+    <view class="floor-title">
+      <image mode="widthFix" src="{{item1.floor_title.image_src}}"></image>
+    </view>
+    <!-- 内容 -->
+    <view class="floor-list">
+      <navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:key="name" url="{{item2.navigator_url}}" open-type="navigate">
+        <image src="{{item2.image_src}}"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class="foot">
+  =到底了=
+</view>
+</view>

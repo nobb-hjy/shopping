@@ -1,0 +1,45 @@
+<view>
+  <view class="address">
+    <view class="add-button">
+      <view class="address-box">
+        <view class="left-box">
+          <view class="left-name">{{address.userName}}</view>
+          <view class="left-address">{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+        </view>
+        <view class="right-phone">{{address.telNumber}}</view>
+      </view>
+    </view>   
+    <view class="title">
+      购物车
+    </view>
+    <!-- 购物车列表 -->
+    <view class="cart-list"
+          wx:for="{{cart}}" 
+          wx:if="{{item.goods_id}}"
+          wx:key="goods_id"
+    >
+      <view class="weui-cell__bd">
+        <navigator class="good-img">
+          <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+        </navigator>
+        <view class="good-content">
+          <view class="good-title">{{item.goods_name}}</view>
+          <view class="good-bottom">
+            <view class="good-price">￥{{item.goods_price}}</view>
+            <view class="bottom-tab">
+              <text>X{{item.num}}</text>
+          </view>
+        </view>
+        </view>
+       </view>
+    </view>
+    <!-- 底部 -->
+    <view class="footer-box">
+      <view class="price-box">
+        <view class="price">合计：<text>￥{{sum}}</text></view>
+        <view class="price-tip">包含运费</view>
+      </view>
+      <view class="pall" bindtap="payBtn">支付({{num}})</view>
+    </view>
+  </view>
+</view>

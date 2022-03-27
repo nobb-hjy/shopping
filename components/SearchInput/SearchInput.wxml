@@ -1,0 +1,10 @@
+<!-- 搜索框组件 -->
+<view class="search-input">
+  <navigator class="nav"
+      url="/pages/search/index"
+      open-type="navigate"
+  >
+  <text class="iconfont icon-search"></text>
+  搜索
+  </navigator>
+</view>

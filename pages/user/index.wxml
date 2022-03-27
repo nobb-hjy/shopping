@@ -1,0 +1,69 @@
+<view class="user-info-box">
+  <view wx:if="{{userInfo.avatarUrl ||userInfo.nickName}}" class="user-img">
+    <image class="user-bg" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user-info">
+      <image class="user-icon" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user-name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else class="login-box">
+    <navigator url="/pages/login/index">登录</navigator>
+  </view>
+</view>
+<view class="user-content">
+  <view class="user-main">
+    <!-- 历史足迹 -->
+    <view class="histroy-wrap">
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">收藏的店铺</view>
+      </navigator>
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">收藏的商品</view>
+      </navigator>
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">关注的商品</view>
+      </navigator>
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">我的足迹</view>
+      </navigator>
+    </view>
+    <view class="order-wrap">
+      <view class="order-title">我的订单</view>
+      <view class="order-content">
+        <navigator url="/pages/order/index?type=1">
+          <view class="order-icon iconfont icon-dingdan"></view>
+          <view class="order-name">全部订单</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=2">
+          <view class="order-icon iconfont icon-fukuantongzhi"></view>
+          <view class="order-name">待付款</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=3">
+          <view class="order-icon iconfont icon-yifahuo"></view>
+          <view class="order-name">待收货</view>
+        </navigator>
+        <navigator>
+          <view class="order-icon iconfont icon-shouye1"></view>
+          <view class="order-name">退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 收货地址管理 -->
+    <view class="address-wrap">
+      收货地址管理
+    </view>
+    <!-- 其他 -->
+    <view class="app-info">
+      <text>联系客服</text>
+      <text>400-4400</text>
+    </view>
+    <navigator class="info-back" url="/pages/feedback/index">意见反馈</navigator>
+    <view class="about-info">关于我们</view>
+    <view class="other-info">把应用推荐给其他人</view>
+  </view>
+ </view>
+

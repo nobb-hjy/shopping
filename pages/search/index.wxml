@@ -1,0 +1,17 @@
+<view>
+  <view class="top">
+    <view class="search-input">
+    <input type="text" bindinput="getSearchList" value="{{text}}" placeholder="请输入您要搜索的商品"/>
+    </view>
+    <view class="top-status" bindtap="resetText" wx:if="{{isShow}}">取消</view>
+  </view>
+  <view wx:if="{{searchList.length>0}}" class="search-list">
+    <navigator class="item" 
+    url="/pages/good_detail/index?goods_id={{item.goods_id}}"
+    wx:for="{{searchList}}" 
+    wx:key="goods_id">
+      {{item.goods_name}}
+    </navigator>
+  </view>
+  <view class="kong" wx:else>{{tip}}</view>
+</view>

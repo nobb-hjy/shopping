@@ -1,0 +1,36 @@
+/* pages/good_list/index.wxss */
+.good-item{
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+  padding: 10rpx;
+}
+.left-box{
+  flex: 2;
+}
+.left-box image{
+  width: 80%;
+}
+.left-box .img{
+  height:225rpx;
+  font-size: 36rpx;
+  color: #ccc;
+  text-align: center;
+  line-height: 225rpx;
+}
+.right-box{
+  flex: 3;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right-box .title-name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient:vertical ;
+  -webkit-line-clamp: 2;
+}
+.right-box .title-price{
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

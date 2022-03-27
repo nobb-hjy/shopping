@@ -1,0 +1,1 @@
+<button style="margin-top: 50rpx;" type="primary" plain bindtap="getUserProfile">登录</button>

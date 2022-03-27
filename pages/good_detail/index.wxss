@@ -1,0 +1,89 @@
+.detail-page{
+  padding-bottom: 100rpx;
+}
+.swiper{
+  width: 100%;
+  height:60vw;
+  text-align: center;
+}
+.swiper image{
+  width: 60%;
+}
+.good-price{
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+  padding-left: 10rpx;
+}
+.good-box{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10rpx;
+}
+.good-box .good-name{
+  flex:4;
+  font-size: 30rpx;
+  padding-right: 20rpx;
+}
+.good-box .collect-box{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: 4rpx solid black;
+  text-align: center;
+  font-size: 24rpx;
+}
+/* 图文详情 */
+.detail-pic-title{
+  padding-left: 10rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  font-weight: 800;
+  color: var(--themeColor);
+  border-top: 8rpx solid #ccc;
+  border-bottom: 8rpx solid #ccc;
+  margin: 15rpx;
+}
+/* 底部操作栏 */
+.footer{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: 2rpx solid #ccc;
+}
+.footer-item1{
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.footer-item1 button{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer-item2{
+  flex: 1.5;
+  color: white;
+  background-color: orange;
+  font-size: 32rpx;
+  font-weight: 400;
+  text-align: center;
+  height: 100%;
+  line-height: 90rpx;
+}
+.footer .item3{
+  background-color: var(--themeColor);
+}

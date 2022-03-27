@@ -1,0 +1,18 @@
+/* components/ChangeTab.wxss */
+.tab-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-bottom: 4rpx solid transparent;
+}
+.title-item{
+  flex: 1;
+}
+.active{
+  color: var(--themeColor);
+  border-bottom: 4rpx solid var(--themeColor);
+}

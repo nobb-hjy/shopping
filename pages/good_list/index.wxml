@@ -1,0 +1,22 @@
+<view class="good-list">
+  <SearchInput></SearchInput>
+  <!-- 父传子tabs,  -->
+  <ChangeTab tabs="{{tabs}}" bindtabItemChange="handleTabItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="good-box">
+      <navigator class="good-item" wx:for="{{goodList}}" wx:key="goods_id" url="/pages/good_detail/index?goods_id={{item.goods_id}}">
+        <view class="left-box">
+          <image wx:if="{{item.goods_big_logo && item.goods_small_logo}}" mode="widthFix" src="{{item.goods_big_logo?item.goods_big_logo:item.goods_small_logo}}"></image>
+          <view class="img" wx:else>!暂无图片</view>
+        </view>
+       <view class="right-box">
+        <text class="title-name">{{item.goods_name}}</text>
+        <text class="title-price">￥{{item.goods_price}}</text>
+       </view>
+      </navigator>
+    </view>
+  </block>
+  <block wx:if="{{tabs[1].isActive}}">1</block>
+  <block wx:if="{{tabs[2].isActive}}">2</block>
+  </ChangeTab>
+</view>

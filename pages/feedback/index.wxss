@@ -1,0 +1,67 @@
+/* pages/feedback/index.wxss */
+page{
+  background-color: #ccc;
+}
+.fb-title{
+  line-height: 90rpx;
+  padding-left: 10rpx;
+  font-size: 32rpx;
+}
+.fb-tips{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20rpx;
+}
+.fb-tips text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 20rpx;
+  font-size: 30rpx;
+  background-color: white;
+  margin:0 10rpx 10rpx;
+  border-radius: 8rpx;
+}
+.fb-desc-box{
+  width: 95%;
+  margin: 30rpx auto;
+  background-color: white;
+  border-radius: 8rpx;
+  padding-bottom: 20rpx;
+}
+.fb-desc-box textarea{
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+.bottom-box{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx;
+}
+.add-pic{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.add-pic button{
+  width: 90rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 20rpx; */
+  font-size: 40rpx;
+  font-weight: 800;
+  background-color: #ccc;
+  padding: 0;
+}
+.fb-submit button{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: white;
+  background-color: var(--themeColor);
+  justify-content: center;
+}

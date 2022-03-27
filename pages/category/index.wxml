@@ -1,0 +1,31 @@
+<!-- 分类页面 -->
+<view class="cate">
+  <!-- 搜索框 -->
+  <SearchInpu></SearchInpu>
+  <!-- 数据展示 -->
+ <view class="content">
+ <!-- 左侧菜单 -->
+  <scroll-view class="left-box" scroll-y="true">
+    <view bindtap="getRightList" class="{{activeIndex===item1.cat_id?'activeItem':''}}" data-index="{{item1.cat_id}}" wx:for="{{cateList}}" wx:for-item="item1" wx:key="cat_id">{{item1.cat_name}}</view>
+  </scroll-view>
+  <!-- 右侧详情 -->
+  <scroll-view class="right-box" scroll-y="true" scroll-top="{{scrollTop}}">
+      <view class="item-box" wx:for="{{rightContent}}" wx:for-item="child" wx:key="cat_id">
+        <view class="item-title">
+          <text class="line">/</text>
+          <text>{{child.cat_name}}</text>
+          <text class="line">/</text>
+        </view>
+        <view wx:if="{{child.children.length>0}}" class="item-list">
+            <navigator wx:for="{{child.children}}" wx:for-item="clist" wx:key="cat_id" url="/pages/good_list/index?cid={{clist.cat_id}}">
+              <image mode="widthFix" src="{{clist.cat_icon}}"></image>
+              <view>{{clist.cat_name}}</view>
+            </navigator>
+        </view>
+        <view class="kong" wx:else>
+        暂无数据
+        </view>
+      </view>
+  </scroll-view>
+ </view>
+</view>

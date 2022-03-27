@@ -1,0 +1,66 @@
+/* 轮播图 */
+.swiper-box{
+  height:340rpx;
+  width: 750rpx;
+}
+.swiper-box .swiper,.swiper-box .swiper .nav,.swiper-box .swiper .nav image{
+  height: 100%;
+  width: 100%;
+}
+/* 导航栏 */
+.index-nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.index-nav .nav-item{
+   flex: 1;
+}
+.index-nav .nav-item image{
+  width: 100%;
+}
+/* 楼层 */
+.index-floor{
+  width: 100%;
+}
+.index-floor .floor-item{
+  width: 100%;
+}
+.index-floor .floor-item .floor-title{
+  width: 100%;
+  padding: 20rpx 0 0;
+}
+.index-floor .floor-item .floor-title image{
+  width: 100%;
+  height: 100%;
+}
+.index-floor .floor-item .floor-list{
+  height: 464rpx;
+  padding:0 10rpx;
+}
+.index-floor .floor-item .floor-list navigator{
+  height:50%;
+  float: left;
+}
+.index-floor .floor-item .floor-list navigator:nth-child(1){
+  height:100%;
+}
+.index-floor .floor-item .floor-list navigator{
+  width: 33.33%;
+  padding:5rpx;
+}
+.index-floor .floor-item .floor-list navigator image{
+  width: 100%;
+  height: 100%;
+}
+/* 底部 */
+.foot{
+  font-size: 24rpx;
+  color: grey;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

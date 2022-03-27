@@ -1,0 +1,18 @@
+/* pages/order/index.wxss */
+.order-box{
+  border-top: 1rpx solid #ccc;
+
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  padding: 0 20rpx;
+}
+.kong{
+  line-height: 240rpx;
+  color: #ccc;
+  text-align: center;
+}

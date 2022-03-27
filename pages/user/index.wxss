@@ -1,0 +1,161 @@
+/* pages/user/index.wxss */
+page{
+  background-color: #ccc;
+}
+.user-info-box{
+  height: 45vh;
+  overflow: hidden;
+}
+.user-img{
+  position: relative;
+}
+.user-bg{
+  height: 45vh;
+  /* 高斯模糊 */
+  filter: blur(10rpx);
+}
+.user-info{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+.user-icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+}
+.user-name{
+  width: 150rpx;
+  text-align: center;
+  height: 150rpx;
+  line-height: 150rpx;
+  color: white;
+  font-size: 40rpx;
+}
+/* 登录 */
+.login-box{
+  height: 45vh;
+  position: relative;
+  background-color: var(--themeColor);
+}
+.login-box navigator{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+  background-color: white;
+  line-height: 150rpx;
+  text-align: center;
+}
+/* 图片下方 */
+.user-content{
+  position: relative;
+  width: 100%;
+}
+.user-main{
+  position: absolute;
+  width: 90%;
+  height: 90rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+  background-color: white;
+  border-radius: 5rpx;
+}
+.histroy-wrap{
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.histroy-wrap navigator{
+  padding: 8rpx 0 5 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 24rpx;
+  text-align: center;
+}
+.his-num{
+  color: var(--themeColor);
+  font-weight: 500;
+  font-size: 30rpx;
+}
+/* 我的订单 */
+.order-wrap{
+  background-color: #fff;
+}
+.order-title{
+  height: 90rpx;
+  border-bottom: 1rpx solid #ccc;
+  line-height: 90rpx;
+  padding-left: 20rpx;
+  font-size: 26rpx;
+}
+.order-content{
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-content navigator{
+  padding: 8rpx 0 10rpx 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 24rpx;
+  text-align: center;
+}
+.order-icon{
+  color: var(--themeColor);
+  font-weight: 500;
+  font-size: 50rpx;
+}
+/* 其他 */
+.address-wrap{
+  margin-top: 30rpx;
+  background-color: white;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}
+.app-info{
+  margin-top: 20rpx;
+  background-color: white;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rpx;
+}
+.info-back,.about-info{
+  margin-top: 5rpx;
+  background-color: white;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}
+/* .about-info{
+  margin-top: 5rpx;
+  background-color: white;
+  line-height: 90rpx;
+  font-size: 24rpx;
+} */
+.other-info{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: white;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}

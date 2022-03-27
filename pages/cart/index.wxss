@@ -1,0 +1,130 @@
+.add-button{
+  padding: 30rpx;
+}
+.address-box{
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+}
+.left-box{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.right-phone{
+  flex: 1;
+  text-align: center;
+}
+.title{
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  border-top: 4rpx solid var(--themeColor);
+  border-bottom: 4rpx solid var(--themeColor);
+}
+/* 购物车列表 */
+.cart-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.weui-cell__hd{
+  flex: 1;
+}
+.weui-cell__bd{
+  flex: 5;
+  display: flex;
+  justify-content: space-between;
+}
+.good-img{
+  flex: 1;
+}
+.good-img image{
+  width: 80%;
+}
+.good-content{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.good-title{
+  color: #666;
+  font-size: 26rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient:vertical ;
+  -webkit-line-clamp: 2;
+}
+.good-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:20rpx 10rpx 0 0;
+  margin-top: 10rpx;
+}
+.good-price{
+  color: var(--themeColor);
+  font-weight: 600;
+  font-size: 32rpx;
+}
+.bottom-tab{
+  display: flex;
+  justify-content: space-around;
+  font-size: 26rpx;
+  align-items: center;
+}
+.bottom-tab view{
+  margin: 0 20rpx 0;
+  border: 1rpx solid #ccc;
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 底部 */
+.footer-box{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #ccc;
+}
+.check-all{
+  flex: 3;
+  font-size: 32rpx;
+  padding-left: 20rpx;
+}
+.price-box{
+  flex: 6;
+  text-align: right;
+  padding: 0 20rpx;
+}
+.price{
+  font-size: 28rpx;
+}
+.price text{
+  color: var(--themeColor);
+  font-weight: 600;
+}
+.price-tip{
+  font-size: 24rpx;
+}
+.pall{
+  flex: 3;
+  text-align: center;
+  line-height: 90rpx;height: 91rpx;
+  background-color: var(--themeColor);
+  color: white;
+  font-size: 36rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "CahangeTab":"../../components/ChangeTab/ChangeTab"
+  },
+  "navigationBarTitleText": "订单查询"
+}

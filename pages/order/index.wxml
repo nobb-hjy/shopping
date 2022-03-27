@@ -1,0 +1,21 @@
+<view>
+  <CahangeTab tabs="{{tabs}}"  bindtabItemChange="handleTabItemChange">
+   <view wx:if="{{orders.length>0}}">
+    <view class="order-box" wx:for="{{orders}}" wx:key="id">
+      <view class="box">
+        <view>订单编号</view>
+        <view>{{item.id}}</view>
+      </view>
+      <view class="box">
+        <view>订单价格</view>
+        <view style="color: var(--themeColor);font-size:32rpx ;">￥{{item.price}}</view>
+      </view>
+       <view class="box">
+        <view>订单日期</view>
+        <view>{{item.date}}</view>
+      </view>
+    </view>
+   </view>
+    <view wx:else class="kong">暂无订单</view>
+  </CahangeTab>
+</view>
