@@ -1,5 +1,8 @@
-|首页|![输入图片说明](style/icon/image.png)|
-|分类|![输入图片说明](style/icon/%E5%88%86%E7%B1%BB.png)|
+ **首页** 
+![输入图片说明](style/icon/image.png)
+
+ **分类** 
+![输入图片说明](style/icon/%E5%88%86%E7%B1%BB.png)
 |购物车|![输入图片说明](style/icon/%E8%B4%AD%E7%89%A9%E8%BD%A6-%E7%A9%BA.png)|![输入图片说明](style/icon/%E8%B4%AD%E7%89%A9%E8%BD%A6.png)|
 |我的|![输入图片说明](style/icon/%E6%9C%AA%E7%99%BB%E5%BD%95.png)|![输入图片说明](style/icon/%E7%99%BB%E5%BD%95.png)|
 |搜索|![输入图片说明](style/icon/%E6%90%9C%E7%B4%A2.png)|
